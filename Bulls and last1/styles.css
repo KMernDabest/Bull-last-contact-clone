@@ -21,7 +21,7 @@ body {
 }
 
 .background-content {
-    height: 70vh; /* Adjust to make space for the hero image */
+    height: 90vh; /* Adjust to make space for the hero image */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,9 +109,9 @@ body {
 /* Hero Image Section */
 .hero-image {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -119,6 +119,7 @@ body {
     align-items: center; 
     height: 67vh;
     background-size: 50% auto;
+    /* margin-bottom: 20em; */
 }
 
 .hero-image img {
@@ -185,7 +186,7 @@ body {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px none #ccc;
     border-radius: 5px;
     text-wrap-style: underline;
 }
@@ -193,6 +194,7 @@ body {
 .contact-form textarea {
     height: 100px;
     resize: none;
+    
 }
 
 .contact-form button {
@@ -233,80 +235,8 @@ footer ul li {
     margin: 0 10px;
 }
 
-/* General Mobile Styles */
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .brand {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .reservation {
-        padding: 1rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    .hero-text {
-        font-size: 1.5rem;
-        transform: translate(-50%, -450%);
-    }
-
-    .hero-image {
-        height: 50vh;
-    }
-
-    .contact-info {
-        padding: 2rem 1rem;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-
-    .contact-form form {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    footer ul {
-        flex-direction: column;
-        gap: 5px;
-    }
-}
-  /* Tablet Styles */
-@media screen and (max-width: 1024px) {
-    .navbar ul {
-        gap: 15px;
-    }
-
-    .hero-image {
-        height: 60vh;
-    }
-
-    .contact-info {
-        padding: 3rem 1.5rem;
-    }
-
-    .contact-form form {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .reservation {
-        font-size: 0.95rem;
+@media screen and (max-width: 750px) {
+    .wallet-cart-grid .wallet-cart-button-container:first-child {
+        margin-top: 8px;
     }
 }
