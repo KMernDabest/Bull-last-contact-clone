@@ -60,6 +60,10 @@ body {
     width: 100px;
     padding-right: 250px;
 }
+.brand img {
+    height: 150.26px;
+    width: 160px;
+}
 
 .brand h1 {
     font-size: 2.5rem;
@@ -101,7 +105,7 @@ body {
     align-items: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -490%);
+    transform: translate(-50%, -495%);
     color: white;
     font-size: 2rem;
 }
