@@ -130,14 +130,13 @@ body {
     width: 100%; 
     height: 100%;
     object-fit: contain;
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 .contact-info {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
     padding-bottom: 100px;
     background: #FFFFFF;
-    margin-top: 2rem;
     justify-content: center;
     text-align: center;
 }
@@ -160,6 +159,7 @@ body {
     justify-content: center;
     background-color: #FFFFFF;
     display: flex;
+
 }
 
 .work-with-us, .send-message {
