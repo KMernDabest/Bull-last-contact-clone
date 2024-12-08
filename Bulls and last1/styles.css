@@ -100,14 +100,24 @@ body {
     position: relative;
 }
 
-.hero-text {
+.hero-text h1 {
     position: absolute;
     align-items: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -615%);
+    transform: translate(-50%, -620%);
     color: white;
+    font-size: 4rem;
+}
+
+.hero-text h7 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1400%);
     font-size: 2rem;
+    color: white;
 }
 
 /* Hero Image Section */
@@ -133,6 +143,31 @@ body {
     margin-bottom: 1rem; 
 }
 
+.reservation-link {
+    position: fixed;
+    top: 50%; /* Vertically centered */
+    right: 0; /* Align to the right edge */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    writing-mode: vertical-lr; /* Display text vertically */
+    text-align: center;
+    background-color: #c3a07c; /* Button background color */
+    color: white; /* Text color */
+    padding: 20px 32px; /* Space around the text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #b0886a; /* Border for styling */
+    z-index: 1000; /* Ensure it is on top of other elements */
+    height: 230px;
+    width: 64px;
+}
+
+/* Hover effect for the reservation link */
+.reservation-link:hover {
+    background-color: #b0886a; /* Slightly darker background */
+    color: white; /* Maintain text color */
+}
+
 .contact-info {
     padding: 1rem 2rem;
     padding-bottom: 100px;
@@ -148,6 +183,7 @@ body {
 .contact-text {
     padding-top: 20rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .contact-info a {
@@ -210,33 +246,121 @@ body {
     cursor: pointer;
 }
 
-footer {
-    background-color: #08272B;
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-.instagram {
-    padding: 20px;
-    background-color: #D3B095;
-}
-
-.footer-bottom {
+.outer-wrapper {
+    width: 100%;
+    height: 808.69px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background-color: #2b3a41;
 }
 
-footer ul {
-    list-style: none;
+.container {
+    text-align: center;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.navigation {
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.navigation span {
+    margin: 0 4px;
+}
+
+.email-updates {
     display: flex;
-    padding: 0;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
 }
 
-footer ul li {
-    margin: 0 10px;
+.email-updates input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    margin-right: 8px;
+    border-radius: 4px;
+    height: 64px;
+    width: 382px;
+}
+
+.email-updates button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .arrow {
+    margin: 16px 0;
+    font-size: 24px;
+}
+  /* Remove text underline and keep link color white */
+nav ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to white */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition on hover or active */
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    color: white; /* Keeps the link color white even when hovered or active */
+}
+.logo-footer {
+width: 128px;
+height: 102.25px;
+}
+.enquiry a {
+    color: white;
+}
+.enquiry a:active,
+.enquiry a:hover,
+.enquiry a:visited {
+    color: white;
 }
 
 @media screen and (max-width: 750px) {
