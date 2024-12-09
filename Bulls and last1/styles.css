@@ -105,7 +105,7 @@ body {
     align-items: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -620%);
+    transform: translate(-50%, -500%);
     color: white;
     font-size: 4rem;
 }
@@ -115,7 +115,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -1400%);
+    transform: translate(-50%, -1100%);
     font-size: 2rem;
     color: white;
 }
@@ -360,6 +360,15 @@ height: 102.25px;
 .enquiry a:active,
 .enquiry a:hover,
 .enquiry a:visited {
+    color: white;
+}
+
+.email a {
+    color: #ffffff;
+}
+.email a:active,
+.email a:hover,
+.email a:visited {
     color: white;
 }
 
